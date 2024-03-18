@@ -87,7 +87,22 @@ a:hover, a:focus {
 button:focus, input:focus {
   outline: 0;
 }
-
+.ppp{
+  width: 500px;
+  height: 500px;
+}
+@media only screen and (max-width: 768px) {
+  /* Your CSS rules for small screens go here */
+  /* For example: */
+  .p{
+    display: flex;
+    justify-content: center;
+  }
+  .ppp{
+    width: 300px;
+    height: 300px;
+  }
+}
 p {
   color: var(--optionalColor);
   line-height: 1.6;
@@ -166,8 +181,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background-color: var(--blackColor);
   color: var(--whiteColor);
-  -webkit-transition: width 0.5s ease-in-out,  height 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out,  height 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out, 
+ height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, 
+ height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -1;
